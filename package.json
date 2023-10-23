@@ -1,7 +1,6 @@
 {
-  "name": "animais-fetch",
+  "name": "animais-fantasticos",
   "version": "1.0.0",
-  "main": "index.html",
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack --mode development --watch"
