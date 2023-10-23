@@ -4,7 +4,7 @@ module.exports = {
   entry: './js/script.js',
   output: {
     path: path.resolve(__dirname, './'),
-    filename: 'main.js',
+    filename: './main.js/main.js',
   },
   module: {
     rules: [
@@ -15,7 +15,7 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env'],
-            plugins: ['plugin-transform-runtime'],
+            plugins: ['@babel/plugin-transform-runtime'],
           },
         },
       },
