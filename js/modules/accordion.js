@@ -5,11 +5,11 @@ export default class Accordion {
   }
 
   toggleAccordion(item) {
-    item.classList.toggle(this.toggleClass);
+    item.classList.toggle(this.activeClass);
     item.nextElementSibling.classList.toggle(this.activeClass);
   }
 
-  // add os eventos ao accordion
+  // adiciona os eventos ao accordion
   addAccordionEvent() {
     this.accordionList.forEach((item) => {
       item.addEventListener('click', () => this.toggleAccordion(item));
